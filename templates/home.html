@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <h1>Iris Flower Prediction</h1>
+    <h2></h2>
+    <form action="/predict" method = "post">
+        <label for="">Petal Length</label>
+        <input type="number" name="pl"><br>
+        <label for="">Petal Width</label>
+        <input type="number" name= "pw"><br>
+
+        <label for="">Sepal Length</label>
+        <input type="number" name = "sl"><br>
+
+        <label for="">Sepal Width</label>
+        <input type="number" name = "sw"><br>
+        <input type="submit" value="Predict">  <br> <br>
+
+        <h3>Prediction Result: {{pred_result}} </h3>
+
+        <h2></h2>
+
+        
+        
+    </form>
+</body>
+</html>
